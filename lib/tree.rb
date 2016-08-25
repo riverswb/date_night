@@ -82,8 +82,12 @@ class Tree
    end
 
    def sorted
+     list = []
      sorted = @movies.sort_by{|_key, value| value}
-     sorted.to_h
+     sorted.each do |sort|
+       list << [sort].to_h
+     end
+     list
      #binding.pry
    end
 
