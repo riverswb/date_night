@@ -83,7 +83,8 @@ class Tree
 
    def sorted
      sorted = @movies.sort_by{|_key, value| value}
-     [sorted].to_h
+     sorted.to_h
+     #binding.pry
    end
 
 end
